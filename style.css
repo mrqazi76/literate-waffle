@@ -1,0 +1,378 @@
+ /* فونت اصلی */
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* هدر کانال */
+header {
+    background: linear-gradient(135deg, black, red);
+    color: black;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  background-image: url('image_gen_3f939b2e-c264-49cc-bf56-6e7ebb3cd231_0.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+header {
+  position: relative;
+  background-image: url('image_gen_3f939b2e-c264-49cc-bf56-6e7ebb3cd231_0.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+header > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+}
+
+.channel-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channel-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* بخش اصلی محتوا */
+main {
+    padding: 20px 15px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* هر پست */
+.post {
+    background-color: black;
+    border: 1px solid #e3eefc;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(25, 118, 210, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.12);
+}
+
+.post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.post-content p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #7a8aa0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: black;
+    transform: scale(1.02);
+}
+
+.post-content.no-image {
+    padding-top: 25px;
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: black;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* واکنش‌گرایی برای موبایل */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .channel-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 12px 10px;
+    }
+
+    .post {
+        margin-bottom: 16px;
+        border-radius: 12px;
+    }
+
+    .post-content h2 {
+        font-size: 18px;
+    }
+
+    .post-content p {
+        font-size: 14px;
+    }
+
+    .read-more {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
+    .post-placeholder {
+      width: 100%; /* عرض کامل */
+      height: 220px; /* ارتفاع دلخواه */
+      background: linear-gradient(135deg, #0d6efd, #eaf4ff); /* گرادیان آبی و سفید */
+      display: flex; /* برای اینکه محتواش وسط قرار بگیره */
+      align-items: center; /* وسط چین کردن عمودی */
+      justify-content: center; /* وسط چین کردن افقی */
+      border-radius: 16px; /* گوشه‌های گرد */
+      overflow: hidden; /* اگه چیزی ازش بیرون زد، برش بده */
+    }
+
+    .post-placeholder img {
+      width: 400px; /* اندازه آیکون */
+      height: 600px; /* اندازه آیکون */
+      opacity: 0.85; /* کمی شفافیت */
+    }
+<!-- بخش اول -->
+<div class="section-wrapper">
+  <h2>عنوان بخش اول</h2>
+  <p>توضیحات یا محتوای بخش اول...</p>
+  <!-- محتوای بیشتر -->
+</div>
+
+<!-- بخش دوم -->
+<div class="section-wrapper">
+  <h2>عنوان بخش دوم</h2>
+  <p>توضیحات یا محتوای بخش دوم...</p>
+  <!-- محتوای بیشتر -->
+</div>
+
+<!-- بخش سوم -->
+<div class="section-wrapper">
+  <h2>عنوان بخش سوم</h2>
+  <p>توضیحات یا محتوای بخش سوم...</p>
+  <!-- محتوای بیشتر -->
+</div>
+/* --- استایل خود کارت پست --- */
+.post {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  overflow: hidden; /* برای اینکه عکس با گوشه‌های گرد هماهنگ بشه */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: 220px; /* ارتفاع تصویر پست */
+  object-fit: cover; /* عکس طوری تنظیم بشه که فضا رو پر کنه بدون اینکه کش بیاد */
+  border-top-left-radius: 12px; /* فقط گوشه‌های بالا گرد باشن */
+  border-top-right-radius: 12px;
+}
+
+.post-content {
+  padding: 20px; /* فاصله داخلی برای متن */
+}
+
+.post-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4em; /* اندازه عنوان پست */
+  color: var(--primary-blue);
+}
+
+.post-content p {
+  font-size: 0.95em; /* کمی کوچکتر از متن بدنه اصلی */
+  margin-bottom: 15px;
+  color: #555; /* خاکستری تیره‌تر برای متن خلاصه */
+}
+
+.post-content a {
+  display: inline-block; /* برای اینکه بشه مارجین داد */
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+/* ===================== Gallery Section Styles ===================== */
+.gallery-section {
+  padding: 60px 20px;
+  background: #0b0b0b; /* Dark background for the section */
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Example font */
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 50px; /* Increased margin for better spacing */
+}
+
+.gallery-header h2 {
+  font-size: 3rem; /* Larger title */
+  color: #e50914; /* Red accent */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.gallery-header p {
+  color: #cccccc; /* Light gray for description */
+  font-size: 1.1rem; /* Slightly larger text */
+  max-width: 600px; /* Limit width for readability */
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  /* Responsive grid: 3 columns on larger screens, 2 on medium, 1 on small */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Increased gap between items */
+  max-width: 1300px; /* Wider container */
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #1a1a1a; /* Slightly lighter dark background for cards */
+  border: 1px solid #333333; /* Subtle border */
+  border-radius: 12px; /* Softer rounded corners */
+  overflow: hidden;
+  transition: transform 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px); /* More pronounced lift effect */
+  box-shadow: 0 15px 35px rgba(229, 9, 20, 0.3); /* Stronger red shadow on hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  display: block;
+  filter: contrast(1.08) brightness(0.95); /* Slight adjustment for visual appeal */
+}
+
+.caption {
+  padding: 18px 20px; /* More padding inside the caption */
+  font-size: 1rem; /* Readable font size */
+  color: #f0f0f0; /* Almost white for captions */
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)); /* Subtle gradient */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.gallery-item:hover .caption {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9)); /* Darker gradient on hover */
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .gallery-header h2 {
+    font-size: 2.5rem;
+  }
+  .gallery-item img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 15px;
+  }
+  .gallery-header h2 {
+    font-size: 2rem;
+  }
+  .gallery-item img {
+    height: 200px;
+  }
+}
+/* ===================== End Gallery Section Styles ===================== */
