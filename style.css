@@ -376,3 +376,57 @@ footer {
   }
 }
 /* ===================== End Gallery Section Styles ===================== */
+body {
+  background: red;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+nav {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 18px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.subtitle {
+  color: #999;
+  margin-bottom: 40px;
+}
+
+.post {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #222;
+}
+nav a {
+  color: #ffd54f;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
